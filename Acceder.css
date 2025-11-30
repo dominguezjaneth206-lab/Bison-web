@@ -1,0 +1,95 @@
+* {
+    margin: 100;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+ul
+{
+    list-style: none;
+}
+ 
+input{
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+    border-bottom: 1px solid #b6b6b6
+}
+body{
+    background-blend-mode: soft-light;
+    background-color: #d9d9d9;
+    background-image: url(Imagen/conalep.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: right -25%;
+}
+
+form{
+    background-color: transparent;
+    width: 600px;
+    height: auto;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 5px solid #203b32;
+}
+.formulario-ul{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+   
+}
+.li-formulario{
+    color: #aaa;
+    font-weight: bold;
+}
+inputs{
+    width: 70%;
+    margin: 0 auto;
+}
+.h2-registro{
+    text-align: center;
+    font-size: 28px;
+    color: #000;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.h1-acceder{
+    text-align: center;
+    font-size: 28px;
+    color: #000;
+    margin-top: 20px;
+    justify-content: center;
+}
+label{
+    margin-top: 10px;
+    color: #000;
+}
+button{
+    display: block;
+    width: 250px;
+    border: 1px solid #000000;
+    background-color: #203b32;
+    height: 30px;
+    font-weight: bold;
+    color: floralwhite;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+ 
+.boxi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formulario a{
+    text-decoration: underline;
+    color: #000;
+}

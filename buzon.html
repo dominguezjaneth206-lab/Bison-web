@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CONALEP</title>
+        <link rel="stylesheet" href="buzon.css">
+    </head>
+    <body>
+        <div class="barra">    
+            <div class="menu container">
+                <div class="pulgon">
+                    <img class="logopulga" src="imagen/bisontitoo.png" alt="Logo Pulga">
+                </div>
+                <a href="index.html" class="logo">BisonWeb</a>
+ 
+                <input type="checkbox" id="menu"/>
+                <label id="label-menu" for="menu">
+                    <img src="imagen/menu.png" class="menu-icono" alt="Menú"/>
+                </label>
+ 
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="inicio.html">Destacados</a></li>
+                        <li><a href="#">Opinión</a></li>
+                        <li><a href="buzon.html">Buzón</a></li>
+                        <li><a href="mi_perfil.html">Perfil</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </header>
+   
+        <div class="parrafo">
+            <p> Explica el motivo de tu solicitud lo más entendible posible.</p>
+            <P class="p1"> NOTA: Es opcional agregar nombre y grupo al final del escrito.</p>
+        
+        </div>
+        <form class="formulario" method="post">
+            <label for="Categoria" id="label-Categoria">Categoria</label>
+            <select name="Categoria" id="Categoria" required>
+                <option value="opcion1">Acoso</option>
+                <option value="opcion2">Pelea</option>
+                <option value="opcion3">Incumplimiento</option>
+                <option value="opcion4">Discriminación</option>
+            </select>
+            <br>
+            <label for="lugar" id="label-lugar">Lugar</label>
+            <select name="lugar" id="lugar" required>
+                <option value="opcion1">Aula</option>
+                <option value="opcion2">Cafetería</option>
+                <option value="opcion3">Docente</option>
+                <option value="opcion4">Equipo de trabajo</option>
+                <option value="opcion5">Alumnos</option>
+                <option value="opcion6">Otro</option>
+            </select>
+ 
+            <label for="fecha" id="label-fecha">Fecha del suceso</label>
+            <input type="date" id="fecha" name="fecha" required >
+            <br>
+            <label for="actual" id="label-actual">Fecha actual</label>
+            <input type="date" id="actual" name="actual" required >
+ 
+            <label for="buzón" id="label-buzón">Buzón</label>
+            <textarea type="text" id="buzón" name="buzón" placeholder=" Explica como se desarollo el incidente o suceso." required></textarea>
+           
+            <label for="razon" id="label-razon">Razón</label>
+            <select name="razon" id="razon" required>
+                <option value="opcion1">Queja</option>
+                <option value="opcion2">Felicitación</option>
+                <option value="opcion3">Aviso</option>
+            </select>
+ 
+            <button  class="btn" type="submit">Enviar</button>
+        </form>
+ 
+        <p class="liw">Contáctanos aquí</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/educacionconalep.juarezIII?rdid=jXbTkdDnaHXDBkvs&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Bz2gbir2a%2F#%22 target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?hl=es-419#inbox?compose=GTvVlcSHwsMnSSSFxNsxjXCZjNVXWjDkdJsHjfCpCrcPhFmkrrDsgvsDgRCvzVXHZMkVmmLfvVsWR%22 target="_blank">
+                <ion-icon name="mail"></ion-icon>
+            </a>
+            <a href="https://conalepchihuahua.edu.mx/?fbclid=IwdGRjcAOPEBljbGNrA48QCmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHpzccvuJAlZ2JxPGQUtUsV51kxHqpEZMw1B9lMKmaXWeZ3xcdY5OxJwiy_Jt_aem__lkdpgCe6jSDM0o-ulRCIg%22 target="_blank">
+                <ion-icon name="globe-outline"></ion-icon>
+            </a>
+            <a href="https://www.google.com.mx/maps/place/Conalep+Ju%C3%A1rez+III/@31.5824379,-106.3347723,17.56z/data=!4m6!3m5!1s0x86e768bb5fe999b3:0x2c47a93e4a01283d!8m2!3d31.5822794!4d-106.3325902!16s%2Fg%2F11b8t7vlff?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D%22 target="_blank">
+                <ion-icon name="location-sharp"></ion-icon>
+            </a>
+        </div>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </body>
+</html>
+ 

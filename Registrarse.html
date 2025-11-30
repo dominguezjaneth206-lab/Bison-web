@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="Acceder.css">
+</head>
+<body>
+    <div class="boxi">
+        <form class="formulario" action="registro.php" method="POST">
+            <nav>
+                <ul class="formulario-ul"></ul>
+            </nav>
+
+            <h2 class="h2-registro">Registrarse</h2>
+
+            <section class="inputs">
+                <label>Crear usuario</label>
+                <input type="text" name="usuario" required>
+
+                <label>Correo</label>
+                <input type="email" name="correo" required>
+
+                <label>Contraseña</label>
+                <input type="password" name="contrasena" required>
+            </section>
+
+            <button type="submit" class="btn">Registrarse</button>
+
+            <p>¿Ya tienes una cuenta? <a href="Prinncipal.html">Acceder</a></p>
+        </form>
+    </div>
+</body>
+</html>
+

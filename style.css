@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+}
+ 
+body {
+background-color: #d9d9d9;
+    font-family: Arial, 'Times New Roman';
+}
+ 
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+ 
+.barra {
+    padding: 32px 0;
+    background-color: #203b3b;
+    margin-top: 70px;
+    width: 100%;
+    height: 20px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+     margin-top: 70px;
+    padding-left: 50px;
+}
+ 
+.logo {
+    font-size: 46px;
+    color: rgb(22, 32, 25);
+    font-weight: 800;
+    font-family: 'Times New Roman';
+    font-variant: small-caps;
+    margin-top: -120px
+}
+ 
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+ 
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #b6cbba;
+    display: block;
+    margin-right: 60px;
+}
+ 
+.menu .navbar ul li a:hover {
+    color: rgb(96, 165, 99)
+}
+ 
+#menu {
+    display: none;
+}
+ 
+.menu-icono {
+    width: 25px;
+    display: block;
+}
+ 
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+ 
+@media(max-width:991px) {
+ 
+    .menu {
+        padding: 30px;
+    }
+ 
+    .menu label {
+        display: inline-block;
+    }
+ 
+    .back {
+        padding: 67px 0;
+    }
+ 
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(56, 102, 102);
+        display: none;
+    }
+ 
+    .menu .navbar ul li {
+        width: 100%;
+    }
+   
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+ 
+    .menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(142, 193, 159);
+    display: block;
+}
+ 
+    .buscador {
+        position: absolute;
+        top: 10%;
+    }
+ 
+}
+ 
+.pulgon {
+    display: inline;
+    float: left;
+    z-index: 1000;
+    margin: 0;
+    margin-top: -120px;
+}
+ 
+.logopulga {
+width: 70px;
+height: 70px;
+ 
+}
+
+.Formulario{
+    width: 700px;
+    height: 90px;
+}
+ 
+.buscador {
+    position: absolute;
+    left: 89%;
+    top:45%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin-top: 4px;
+    color: #d9d9d9;
+}
+ 
+input {
+    outline: none;
+    box-sizing: border-box;
+    height: 50px;
+    width: 0;
+    padding: 0 10px;
+    color: rgb(86, 159, 120);
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid #bdb2b2;
+    transition: all .7s ease;
+}
+::placeholder  {
+    color: rgb(123, 123, 123);
+}
+ 
+.btn {
+    position: absolute;
+    right: 0;
+    top: 8PX;
+    width: 55px;
+    height:55px;
+    background: #3d5e44;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 0px;
+}
+.btn i {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 10px;
+    transition: all .7s ease;
+    position: absolute;
+    right: 15px;
+    top: 55PX;
+    margin-top: -35px;
+}
+ 
+.buscador:hover input {
+    width: 240px;
+}
+ 
+.buscador:hover i {
+    transform: rotate(-360deg);
+}
+ 
+.btn:hover {
+background: #bad3bf;
+}
